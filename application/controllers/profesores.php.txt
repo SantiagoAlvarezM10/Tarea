@@ -3,6 +3,8 @@
 
 	class Profesores extends CI_controller{
 
+
+
 		public function index(){
 			
 			$head['title'] =  'Profesor';			
