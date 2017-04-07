@@ -56,5 +56,17 @@
 
 			}
 		}
+
+
+			public function listar(){
+			
+			$head['title'] = 'Profesores';
+			$this->load->model('Profesor');	
+			$head['profesores'] = $this->Profesor->obtener_todas();					
+			$this->load->view('templates/header',$head);
+			$this->load->view('profesor/listar');		
+			$this->load->view('templates/footer');
+
+		}
 	}
 ?>
